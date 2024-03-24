@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Roboto Serif";
 }
 
 body {
@@ -18,6 +19,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
 .header__logo a {
@@ -28,6 +31,11 @@ body {
 
 .header__nav ul {
     list-style-type: none;
+}
+
+.header__nav li:hover {
+    transform: scale(1.2);
+    font-weight: bold;
 }
 
 .header__nav ul li {
@@ -108,7 +116,7 @@ body {
 .footer {
     background-color: #2b1d42;
     color: #fff;
-    text-align: center;
+    text-align: left;
     padding: 20px;
 }
 
